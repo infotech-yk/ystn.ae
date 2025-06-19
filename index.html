@@ -1,0 +1,204 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yellowstone Global FZCO</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    /* [CSS kodları olduğu gibi korunur - özetlenmiş] */
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #ffffff;
+      color: #1f1f1f;
+      margin: 0;
+    }
+    header {
+      background: linear-gradient(to right, #fff8e1, #f9f9f9);
+      padding: 30px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .header-left img {
+      max-height: 100px;
+      transition: transform 0.3s ease;
+    }
+    .header-left:hover img {
+      transform: scale(1.05);
+    }
+    .header-center {
+      flex: 1;
+      text-align: center;
+    }
+    .header-subtitle {
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: #555555;
+    }
+    .header-right .cta-button {
+      background-color: #f3c300;
+      color: #1f1f1f;
+      padding: 12px 24px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+    }
+    .header-right .cta-button:hover {
+      background-color: #d6ad00;
+    }
+    nav {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    nav a:hover {
+      color: #f3c300;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .section-title {
+      font-size: 26px;
+      margin-bottom: 16px;
+      border-bottom: 2px solid #f3c300;
+      display: inline-block;
+      padding-bottom: 6px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    footer {
+      background-color: #f3c300;
+      color: #1f1f1f;
+      text-align: center;
+      padding: 20px;
+    }
+    form {
+      margin-top: 30px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+    form .full-width {
+      grid-column: 1 / -1;
+    }
+    input, textarea {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 15px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+    button {
+      grid-column: 1 / -1;
+      width: fit-content;
+      padding: 12px 24px;
+      background-color: #f3c300;
+      color: #1f1f1f;
+      border: none;
+      font-weight: 600;
+      cursor: pointer;
+      border-radius: 6px;
+    }
+    .success-message {
+      grid-column: 1 / -1;
+      background-color: #d4edda;
+      color: #155724;
+      border: 1px solid #c3e6cb;
+      padding: 12px;
+      border-radius: 6px;
+      display: none;
+    }
+    iframe {
+      margin-top: 30px;
+      width: 100%;
+      height: 400px;
+      border: none;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <img src="logo.png" alt="Yellowstone Global Logo" />
+    </div>
+    <div class="header-center">
+      <div class="header-subtitle">Reliable - Innovative - Sustainable Supply Power</div>
+    </div>
+    <div class="header-right">
+      <a href="#contact" class="cta-button">Contact Us</a>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#about">About Us</a>
+    <a href="#sectors">Industries</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <div class="section-title">About Us</div>
+    <p>Yellowstone Global FZCO is a foreign trade company specialized in the trading of chemical raw materials. Based in Dubai, our structure enables us to offer a strong logistics network throughout the Middle East and surrounding regions. We are committed to providing our clients with high-quality and sustainable supply solutions. With our experience and flexibility, we respond quickly and reliably to the needs of our business partners.</p>
+  </section>
+
+  <section id="sectors">
+    <div class="section-title">Industries</div>
+    <p>We trade chemical raw materials for the food, cosmetics, and pharmaceutical industries, contributing to the efficiency of their supply chains.</p>
+    
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 30px;">
+  <div style="flex: 0 0 calc(33.333% - 20px); text-align: center; box-sizing: border-box;">
+    <img src="shutterstock_12029640223.png" alt="Food Industry" style="width: 100%; border-radius: 10px; cursor: pointer;" onclick="location.href='food-en.html';">
+    <p>Food</p>
+  </div>
+  <div style="flex: 0 0 calc(33.333% - 20px); text-align: center; box-sizing: border-box;">
+    <img src="cosmetics-industries.png" alt="Cosmetics Industry" style="width: 100%; border-radius: 10px; cursor: pointer;" onclick="location.href='cosmetics-en.html';">
+    <p>Cosmetics</p>
+  </div>
+  <div style="flex: 0 0 calc(33.333% - 20px); text-align: center; box-sizing: border-box;">
+    <img src="shutterstock_281124458 (1).png" alt="Pharmaceutical Industry" style="width: 100%; border-radius: 10px; cursor: pointer;" onclick="location.href='pharmaceutical-en.html';">
+    <p>Pharmaceutical</p>
+  </div>
+</div>
+
+</section>
+
+  <section id="contact">
+    <div class="section-title">Contact</div>
+    <p><strong>Address:</strong> Dubai Silicon Oasis, DDP, Building A2, Dubai, United Arab Emirates</p>
+    <p><strong>Email:</strong> info@ystn.ae</p>
+    <form onsubmit="event.preventDefault(); document.getElementById('successMessage').style.display = 'block'; this.reset();">
+      <input type="text" name="firstname" placeholder="First Name" required />
+      <input type="text" name="lastname" placeholder="Last Name" required />
+      <input type="tel" name="phone" placeholder="Phone Number" class="full-width" required />
+      <input type="email" name="email" placeholder="Email Address" class="full-width" required />
+      <textarea name="message" placeholder="Your Message..." class="full-width" required></textarea>
+      <button type="submit">Send</button>
+      <div class="success-message" id="successMessage">Your message has been successfully sent. We will get back to you shortly.</div>
+    </form>
+    <iframe src="https://www.google.com/maps?q=Dubai+Silicon+Oasis,+DDP,+Building+A2,+Dubai,+United+Arab+Emirates&output=embed"></iframe>
+  </section>
+
+  <footer>
+    &copy; 2025 Yellowstone Global FZCO. All rights reserved.
+  </footer>
+</body>
+</html>
